@@ -1,7 +1,7 @@
 import React from 'react'
 import { useAuth } from '../../Context/AuthContext'
 import { Link ,useLocation} from 'react-router-dom'
-import './Header.css'
+import './header.css'
 function Header() {
   const { isAuthenticated, logout } = useAuth()
   const location = useLocation()
