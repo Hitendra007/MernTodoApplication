@@ -1,8 +1,9 @@
 import React from 'react'
 import { useAuth } from '../../Context/AuthContext'
 import './Login.css'
-import { useNavigate } from 'react-router-dom'
 
+import { useNavigate } from 'react-router-dom'
+console.log('')
 function Login() {
     const { isAuthenticated, login } = useAuth()
     const  navigate  = useNavigate();
