@@ -71,8 +71,9 @@ const login = asyncHandler(async (req, res, next) => {
     )
     const options = {
         httpOnly: true,
-        secure: true,
-    }
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: 'None', // Needed for cross-origin cookies
+      };
 
     return res.status(200)
         .cookie('accessToken', accessToken, options)
@@ -105,8 +106,9 @@ const logout = asyncHandler(async (req, res, next) => {
     // Clear cookies
     const options = {
         httpOnly: true,
-        secure: true,
-    };
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: 'None', // Needed for cross-origin cookies
+      };
     return res.status(200)
         .clearCookie('refreshToken', options)
         .clearCookie('accessToken', options)
