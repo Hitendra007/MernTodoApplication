@@ -44,7 +44,7 @@ function Todos() {
         <div id="todo-div">
             <div id="todos-div">
                 {todos.map((t) => (
-                    <div key={t._id} className="todo-item">
+                    <div key={t._id} className={`todo-item ${t.isCompleted ? 'iscompleted' : ''}`} >
                         <input
                             type="text"
                             value={editingTodoId === t._id ? updatedTodoValue : t.todo}
