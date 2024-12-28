@@ -1,0 +1,30 @@
+/* Custom CSS Example */
+
+body {
+    background-color:rgb(56, 181, 69); /* Light gray background */
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  button {
+    /* background-color: #007bff; */
+    background-color: rgb(246, 63, 63);
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: rgb(232, 9, 9);
+  }
+  

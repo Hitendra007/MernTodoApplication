@@ -1,0 +1,19 @@
+#footer{
+    background-color:rgb(138, 244, 147);
+    padding: 4px;
+    margin: 2px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 50px;
+}
+
+#footer-text{
+    background-color: red;
+    width: fit-content; 
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    border-radius: 4px;
+}

@@ -1,0 +1,12 @@
+#main-div-login{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+#loginform{
+    display: flex;
+   flex-direction: column;
+   margin-top: 20vh;
+   margin-bottom: 20vh;
+}

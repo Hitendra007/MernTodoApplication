@@ -1,0 +1,21 @@
+#main-divv{
+    height: 78vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-img{
+    height: 50vh;
+    width: 50vh;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 5px #646cffaa;
+}
+
+
+#logo-img {
+    filter: sepia(1.9) saturate(1.0) hue-rotate(90deg);
+    transition: filter 0.3s ease;  /* Optional: Add a smooth transition */
+  }
+  

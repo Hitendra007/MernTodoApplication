@@ -1,0 +1,44 @@
+#todo-div {
+    width: 100vh;
+    height: 50vh;
+    background-color:rgb(248, 231, 231);
+    border: 2px solid black;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#todos-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* Make the scrollbar thin */
+    scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+}
+
+#todos-div::-webkit-scrollbar-button {
+    display: none; /* Hides the up and down arrows */
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between items */
+    margin: 5px 0; /* Space between rows */
+}
+
+.todo-item > input {
+    margin: 0;
+    padding: 5px;
+}
+
+
+.completed {
+    text-decoration: line-through;
+    color: gray; /* Optional: Make the text look inactive */
+}
