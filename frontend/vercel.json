@@ -1,8 +1,12 @@
 {
     "rewrites": [
       {
+        "source": "/api/(.*)",
+        "destination": "/api/$1"  // API requests are passed to the backend
+      },
+      {
         "source": "/(.*)",
-        "destination": "/index.html"
+        "destination": "/index.html" // Non-API requests are served by React
       }
     ]
   }
