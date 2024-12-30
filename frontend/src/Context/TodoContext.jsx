@@ -71,17 +71,20 @@ export const TodoProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        if (isAuthenticated) {
-            getTodos(); // Fetch todos only after the user is authenticated
-        } else {
-            setTodos([]); // Clear todos if the user is not authenticated
-        }
-    }, [isAuthenticated]);
-    
+        getTodos(); // Fetch todos on component mount
+    }, []);
+
     // Debug useEffect to log updated todos
     useEffect(() => {
         console.log("Todos state updated:", todos);
     }, [todos]);
+    
+    useEffect(()=>{
+      if(isAuthenticated==false)
+      {
+        setTodos([])
+      }
+    },[isAuthenticated])
     return (
         <TodoContext.Provider value={{ addTodo, getTodos, deleteTodo, updateTodo, toggleComplete, todos}} >{children}</TodoContext.Provider>
     )

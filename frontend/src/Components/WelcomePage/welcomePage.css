@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: black;
 }
 
 #logo-img{
@@ -15,7 +16,7 @@
 
 
 #logo-img {
-    filter: sepia(1.9) saturate(1.0) hue-rotate(90deg);
+    filter: sepia(1) saturate(1.0) hue-rotate(90deg);
     transition: filter 0.3s ease;  /* Optional: Add a smooth transition */
   }
   

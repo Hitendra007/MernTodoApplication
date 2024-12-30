@@ -10,10 +10,11 @@
     gap: 10px; /* Adds gap between input elements */
     padding: 50px;
     border-radius: 5px;
-    box-shadow: 2px 2px 10px 2px #f04a4a;
-    background-color: red;
+    box-shadow: 2px 2px 10px 2px rgb(150, 236, 149);
+    background-color:rgb(167, 255, 166);
     margin-top: 16vh;
     margin-bottom: 16vh;
+    color: black;
   }
   
   .form-group {
