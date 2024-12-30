@@ -74,6 +74,7 @@ export const TodoProvider = ({ children }) => {
       if(isAuthenticated==false)
       {
         setTodos([])
+        console.log(todos)
       }
       else{
         getTodos()
