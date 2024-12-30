@@ -123,4 +123,11 @@ We welcome contributions to enhance this project. Follow these steps to contribu
 
 5. Open a pull request to the main repository and describe your changes.
 
+## UI Previews
+
+### Login Page
+![Login Page](https://postimg.cc/CR7TpHqM)
+
+### Home
+![Home](https://postimg.cc/06XTbknL)
 
