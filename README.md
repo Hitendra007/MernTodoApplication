@@ -125,6 +125,9 @@ We welcome contributions to enhance this project. Follow these steps to contribu
 
 ## UI Previews
 
+### Signup Page
+![signup](https://i.postimg.cc/9fdcByzn/3t.png)
+
 ### Login Page
 ![Login Page](https://i.postimg.cc/rpX8Wfy4/2t.png)
 
