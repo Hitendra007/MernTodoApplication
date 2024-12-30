@@ -125,14 +125,14 @@ We welcome contributions to enhance this project. Follow these steps to contribu
 
 ## UI Previews
 
+### Home
+![Home](./images/home.png)
+
 ### Signup Page
 ![Signup](./images/signup.png)
 
 ### Login Page
 ![Login Page](./images/login.png)
-
-### Home
-![Home](./images/home.png)
 
 ### Todos
 ![Todos](./images/todos.png)
