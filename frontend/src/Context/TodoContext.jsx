@@ -69,20 +69,14 @@ export const TodoProvider = ({ children }) => {
             console.log(error)
         }
     }
-
-    useEffect(() => {
-        getTodos(); // Fetch todos on component mount
-    }, []);
-
-    // Debug useEffect to log updated todos
-    useEffect(() => {
-        console.log("Todos state updated:", todos);
-    }, [todos]);
     
     useEffect(()=>{
       if(isAuthenticated==false)
       {
         setTodos([])
+      }
+      else{
+        getTodos()
       }
     },[isAuthenticated])
     return (
