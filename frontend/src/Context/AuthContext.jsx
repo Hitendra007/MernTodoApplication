@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
         try {
             const response = await checkAuthStatus();
             if (response.status === 200) {
-                setUser(response.data);
+                setUser(response.data.data.user);
                 setIsAuthenticated(true);
             }
         } catch (err) {
@@ -28,7 +28,7 @@ export const AuthProvider = ({ children }) => {
             const response = await apiLogin(email, password);
             console.log(response)
             if (response.status === 200) {
-                setUser(response.data.user);
+                setUser(response.data.data.user);
                 setIsAuthenticated(true);
                 setToken(response.data.accesstoken);
             }

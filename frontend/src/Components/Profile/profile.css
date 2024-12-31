@@ -1,0 +1,17 @@
+#profile-div{
+    background-color:rgb(167, 255, 166) ;
+    border-radius: 6px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#details-div{
+    text-align: left;
+    margin: auto;
+    background-color: white;
+    width: fit-content;
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 8px rgba(44, 20, 20, 0.5);
+}

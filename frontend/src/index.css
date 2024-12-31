@@ -1,30 +1,75 @@
 /* Custom CSS Example */
 
 body {
-    background-color:white; /* Light gray background */
-    font-family: Arial, sans-serif;
-    color: white;
-    overflow: hidden;
+  background-color: white; /* Light gray background */
+  font-family: Arial, sans-serif;
+  color: black; /* Text color changed to black for better contrast */
+  overflow: hidden;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: rgb(246, 63, 63);
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: rgb(232, 9, 9);
+}
+
+/* Responsive CSS for smaller screens */
+@media (max-width: 768px) {
+  body {
+      font-size: 16px; /* Slightly smaller font size on tablets */
   }
-  
+
   header {
-    background-color: #333;
-    color:black;
-    padding: 20px;
-    text-align: center;
+      padding: 15px; /* Reduce padding in header */
   }
-  
+
   button {
-    /* background-color: #007bff; */
-    background-color: rgb(246, 63, 63);
-    color: white;
-    padding: 8px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
+      padding: 10px 12px; /* Increase button padding for easier tap on mobile */
   }
-  
-  button:hover {
-    background-color: rgb(232, 9, 9);
+}
+
+/* Additional styling for very small screens like mobile phones */
+@media (max-width: 480px) {
+  body {
+      font-size: 14px; /* Smaller font size for smaller devices */
   }
-  
+
+  header {
+      font-size: 18px; /* Adjust header text size */
+      padding: 10px; /* Further reduce header padding */
+  }
+
+  button {
+      width: 100%; /* Make the button full width for mobile */
+      padding: 12px; /* Increase padding for mobile */
+  }
+}
+
+/* For larger screens (desktops and larger tablets) */
+@media (min-width: 1024px) {
+  body {
+      font-size: 18px; /* Larger font size for better readability on large screens */
+  }
+
+  header {
+      padding: 25px; /* Larger padding for better aesthetics on large screens */
+  }
+
+  button {
+      padding: 10px 20px; /* Increase padding for a more proportionate look on larger screens */
+  }
+}

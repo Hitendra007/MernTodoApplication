@@ -10,6 +10,7 @@ import PrivateRoute from './Components/PrivateRoute.jsx';
 import { AuthProvider } from './Context/AuthContext.jsx';
 import WelcomePage from './Components/WelcomePage/welcomePage.jsx';
 import { TodoProvider } from './Context/TodoContext.jsx';
+import Profile from './Components/Profile/Profile.jsx';
 // Router configuration
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
         {/* PrivateRoute will protect this route */}
         <Route element={<PrivateRoute />}>
           <Route path='/home' element={<Home />} />
+          <Route path='/profile' element={<Profile/>}/>
         </Route>
       </Route>
     </>
